@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "master", "main" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master", "main" ]
 
 jobs:
   build-and-test:
@@ -25,9 +25,10 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
 
-    - name: Install Playwright
-      run: pwsh ./UITests/bin/Debug/net8.0/playwright.ps1 install
-      continue-on-error: true
+    # ?? PASSO CRÍTICO
+    - name: Install Playwright browsers
+      run: pwsh ./UITests/bin/Debug/net9.0/playwright.ps1 install
+      shell: pwsh
 
     - name: Run tests
       run: dotnet test --no-build
