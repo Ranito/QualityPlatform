@@ -1,5 +1,11 @@
+# build
 bin/
 obj/
+
+# VS
 .vs/
-*.user
-*.suo
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal

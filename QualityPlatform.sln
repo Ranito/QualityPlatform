@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApi", "EmployeeApi\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApi.IntegrationTests", "EmployeeApi.IntegrationTests\EmployeeApi.IntegrationTests.csproj", "{AF84CA68-16E1-4FF5-9BB8-A9F338B73836}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITests", "UITests\UITests.csproj", "{2FCDA447-D604-B697-541D-BCDFF5B2DCEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AF84CA68-16E1-4FF5-9BB8-A9F338B73836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF84CA68-16E1-4FF5-9BB8-A9F338B73836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF84CA68-16E1-4FF5-9BB8-A9F338B73836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCDA447-D604-B697-541D-BCDFF5B2DCEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCDA447-D604-B697-541D-BCDFF5B2DCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCDA447-D604-B697-541D-BCDFF5B2DCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCDA447-D604-B697-541D-BCDFF5B2DCEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
