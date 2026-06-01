@@ -5,7 +5,7 @@
 namespace EmployeeApi.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialSQLite : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,8 @@ namespace EmployeeApi.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    MonthlySalary = table.Column<decimal>(type: "TEXT", nullable: false)
+                    Department = table.Column<string>(type: "TEXT", nullable: false),
+                    Salary = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

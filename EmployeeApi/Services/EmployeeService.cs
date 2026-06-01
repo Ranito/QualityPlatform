@@ -29,5 +29,26 @@ namespace EmployeeApi.Services
             _context.Employees.Add(employee);
             _context.SaveChanges();
         }
+        public void Delete(int id)
+        {
+            var employee = _context.Employees.Find(id);
+
+            if (employee != null)
+            {
+                _context.Employees.Remove(employee);
+                _context.SaveChanges();
+            }
+        }
+        public void Update(Employee employee)
+        {
+            _context.Employees.Update(employee);
+            _context.SaveChanges();
+        }
+        public IEnumerable<Employee> GetByDepartment(string department)
+        {
+            return _context.Employees
+                .Where(e => e.Department == department)
+                .ToList();
+        }
     }
 }

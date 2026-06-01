@@ -22,12 +22,16 @@ namespace EmployeeApi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("MonthlySalary")
+                    b.Property<string>("Department")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("Salary")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
