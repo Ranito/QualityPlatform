@@ -212,7 +212,7 @@ GET /api/employees/department/IT
 Run the API and navigate to:
 
 ```text
-https://localhost:7228/swagger
+https://localhost:5053/swagger
 ```
 
 Swagger provides:
