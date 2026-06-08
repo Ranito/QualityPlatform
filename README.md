@@ -442,22 +442,45 @@ Automated verification of user-facing functionality.
 
 # Running the Project
 
-## Restore Packages
+Navigate to the API project:
+
+```bash
+cd EmployeeApi
+```
+
+Restore dependencies:
 
 ```bash
 dotnet restore
 ```
 
-## Apply Migrations
-
-```bash
-dotnet ef database update
-```
-
-## Run API
+Run the API:
 
 ```bash
 dotnet run
+```
+
+Swagger UI:
+
+```text
+https://localhost:7228/swagger
+```
+
+## Database
+
+The project uses SQLite.
+
+The database file is included in the repository:
+
+```text
+EmployeeApi/employees.db
+```
+
+If the database is deleted, it can be recreated using Entity Framework migrations:
+
+```bash
+dotnet tool install --global dotnet-ef
+dotnet ef database update
 ```
 
 ---
